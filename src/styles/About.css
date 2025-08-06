@@ -1,0 +1,44 @@
+/* Auto Carousel Animation */
+@keyframes carousel {
+  0%, 30% { transform: translateX(0); }
+  33%, 63% { transform: translateX(-100%); }
+  66%, 97% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-carousel {
+  animation: carousel 15s infinite;
+  width: 300%; /* Ensure all slides are visible during animation */
+}
+
+/* Card hover transition */
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+/* Background split */
+.relative {
+  min-height: 100vh; /* Ensure background covers full height */
+}
+
+/* Carousel positioning */
+.w-full.relative {
+  margin-top: -2rem; /* Adjust overlap as needed */
+  margin-bottom: 4rem;
+  z-index: 20;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-cols-3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .animate-carousel {
+    width: 300%; /* Maintain width for mobile */
+  }
+}

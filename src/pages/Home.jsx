@@ -13,13 +13,13 @@ function Home() {
                 }}
                 className="relative overflow-hidden"
             >
-                <Header />
+                {/* <Header /> */}
 
                 {/* 2-Column Section (Image + Video) - Responsive Stacking */}
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 md:py-12 lg:py-16">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 items-center min-h-[300px] sm:min-h-[340px]">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 items-start min-h-[300px] sm:min-h-[340px]">
                         {/* Image Column */}
-                        <div className="h-full rounded-lg overflow-hidden shadow-xl transform hover:scale-[1.02] transition duration-500">
+                        <div className="rounded-lg overflow-hidden shadow-xl transform hover:scale-[1.02] transition duration-500">
                             <img
                                 src="https://mccsblr.edu.in/wp-content/uploads/2025/07/June-2025-Photos-16.jpg"
                                 alt="Mount Carmel School Campus"
@@ -32,9 +32,25 @@ function Home() {
                             />
                         </div>
 
+                        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 items-start min-h-[300px] sm:min-h-[340px]"> */}
+                        {/* Image Column */}
+                        <div className="rounded-lg overflow-hidden shadow-xl transform hover:scale-[1.02] transition duration-500">
+                            <img
+                                src="https://mccsblr.edu.in/wp-content/uploads/2025/07/June-2025-Photos-16.jpg"
+                                alt="Mount Carmel School Campus"
+                                className="w-full h-full object-cover min-h-[200px] sm:min-h-[300px]"
+                                loading="lazy"
+                                onError={(e) => {
+                                    e.target.onerror = null;
+                                    e.target.src = '/default-school.jpg';
+                                }}
+                            />
+                        </div>
+                        {/* </div> */}
+
                         {/* Video Column */}
-                        <div className="h-full relative rounded-lg overflow-hidden shadow-xl aspect-video md:aspect-auto md:min-h-[300px]">
-                            <div className="w-full h-full">
+                        {/* <div className="h-full relative rounded-lg overflow-hidden shadow-xl aspect-video md:aspect-auto md:min-h-[300px]">
+                            <div className="w-full">
                                 <iframe
                                     className="w-full h-full rounded-lg min-h-[200px] sm:min-h-[300px]"
                                     src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
@@ -45,7 +61,7 @@ function Home() {
                                     loading="lazy"
                                 ></iframe>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -71,22 +87,23 @@ function Home() {
 
             {/* Campus Life & Beyond Section */}
             <main className="flex-grow">
-                <section className="py-12 sm:py-16" style={{ backgroundColor: '#f0e7e3ff' }}>
+                <section className="py-12 sm:py-20" style={{ backgroundColor: '#f0e7e3ff' }}>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6">
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">
                             Campus Life & Beyond
                         </h2>
-                        <div className="w-24 h-1 bg-[#541212] mx-auto mb-6"></div>
-                        <p className="text-base sm:text-lg text-gray-700 text-center mb-8 sm:mb-12 px-4">
+                        <div className="w-24 h-1 bg-[#541212] mx-auto mb-10"></div>
+                        <p className="text-base sm:text-lg text-gray-700 text-center mb-12 px-4">
                             Discover the vibrant and enriching experiences that define life at Mount Carmel Central School, from engaging events to state-of-the-art facilities.
                         </p>
+                        <br /><br />
 
-                        {/* Cards Section - Responsive Grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-0">
+                        {/* Cards Section - Responsive Grid with Spacing */}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 sm:px-0">
                             {/* Card 1: Upcoming Events */}
                             <div className="flex flex-col items-center">
-                                <div className="relative w-full h-64 sm:h-72 md:h-80 group perspective-1000">
-                                    <div className="relative w-full h-full transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
+                                <div className="relative w-full h-64 sm:h-50 md:h-30 group perspective-1000">
+                                    <div className="relative w-full  transition-transform duration-500 transform-style-3d group-hover:rotate-y-180">
                                         {/* Front Face */}
                                         <div className="absolute w-full h-full backface-hidden rounded-lg shadow-xl overflow-hidden">
                                             <div className="relative w-full h-full bg-[#1E3A8A] bg-opacity-80">
@@ -95,10 +112,10 @@ function Home() {
                                                     alt="Upcoming Events"
                                                     className="w-full h-full object-cover opacity-50"
                                                     loading="lazy"
-                                                    onError={(e) => {
-                                                        e.target.onerror = null;
-                                                        e.target.src = '/default-image.jpg';
-                                                    }}
+                                                    // onError={(e) => {
+                                                    //     e.target.onerror = null;
+                                                    //     e.target.src = '/default-image.jpg';
+                                                    // }}
                                                 />
                                                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
                                                     <svg className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4" fill="currentColor" viewBox="0 0 24 24">
@@ -119,7 +136,7 @@ function Home() {
                                 </div>
                                 <Link
                                     to="/events"
-                                    className="mt-4 px-4 py-1 sm:px-6 sm:py-2 bg-white text-[#1E3A8A] font-semibold rounded-full hover:bg-gray-200 transition text-sm sm:text-base"
+                                    className="mt-6 px-4 py-1 sm:px-6 sm:py-2 bg-white text-[#1E3A8A] font-semibold rounded-full hover:bg-gray-200 transition text-sm sm:text-base"
                                 >
                                     View Events
                                 </Link>
@@ -161,7 +178,7 @@ function Home() {
                                 </div>
                                 <Link
                                     to="/gallery"
-                                    className="mt-4 px-4 py-1 sm:px-6 sm:py-2 bg-white text-[#7C2D12] font-semibold rounded-full hover:bg-gray-200 transition text-sm sm:text-base"
+                                    className="mt-6 px-4 py-1 sm:px-6 sm:py-2 bg-white text-[#7C2D12] font-semibold rounded-full hover:bg-gray-200 transition text-sm sm:text-base"
                                 >
                                     View Gallery
                                 </Link>
@@ -203,7 +220,7 @@ function Home() {
                                 </div>
                                 <Link
                                     to="/facilities"
-                                    className="mt-4 px-4 py-1 sm:px-6 sm:py-2 bg-white text-[#15803D] font-semibold rounded-full hover:bg-gray-200 transition text-sm sm:text-base"
+                                    className="mt-6 px-4 py-1 sm:px-6 sm:py-2 bg-white text-[#15803D] font-semibold rounded-full hover:bg-gray-200 transition text-sm sm:text-base"
                                 >
                                     View Facilities
                                 </Link>
@@ -331,7 +348,7 @@ function Home() {
                 </div>
             </section>
             
-            <About />
+            {/* <About /> */}
         </div>
     );
 }

@@ -6,7 +6,7 @@ const Header = () => {
     <header className="w-full text-white px-6 py-4 flex items-center justify-between relative z-50">
       {/* Logo + Name */}
       <div className="flex items-center space-x-4">
-        <img src="/logo.png" alt="Logo" className="h-12 w-12" />
+        {/* <img src="/logo.png" alt="Logo" className="h-12 w-12" /> */}
         <div className="font-bold text-sm leading-tight">
           <div>MOUNT CARMEL CENTRAL SCHOOL</div>
           <div className="text-xs">BENGALURU - 560052</div>

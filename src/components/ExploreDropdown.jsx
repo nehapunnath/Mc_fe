@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import mc9 from '../assets/mc9.jpg';
+import mc9 from '../assets/mc9.JPG';
 import { 
   FaChurch, 
   FaUserTie, 

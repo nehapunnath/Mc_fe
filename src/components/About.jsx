@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import '../styles/About.css';
-import mc5 from '../assets/mc5.jpg';
-import mc1 from '../assets/mc1.jpg';
-import mc8 from '../assets/mc8.jpg';
+import mc5 from '../assets/mc5.JPG';
+import mc1 from '../assets/mc1.JPG';
+import mc8 from '../assets/mc8.JPG';
 
 function About() {
   const carouselRef = useRef(null);

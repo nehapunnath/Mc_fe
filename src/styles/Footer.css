@@ -1,0 +1,41 @@
+/* Footer Styles */
+footer {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer ul li {
+  transition: transform 0.3s ease;
+}
+
+footer ul li:hover {
+  transform: translateX(5px);
+}
+
+/* Social Media Icons */
+footer .social-icons a {
+  transition: all 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  transform: translateY(-3px);
+  color: #c6795a;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  footer .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  footer .flex-col {
+    align-items: center;
+    text-align: center;
+  }
+}

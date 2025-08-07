@@ -30,3 +30,13 @@
 .group:hover .group-hover\:rotate-y-180 {
   transform: rotateY(180deg);
 } 
+/* For smooth dropdown animation */
+.group:hover .group-hover\:block {
+  display: block;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, -45%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}

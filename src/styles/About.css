@@ -1,44 +1,100 @@
-/* Auto Carousel Animation */
+
+
 @keyframes carousel {
-  0%, 30% { transform: translateX(0); }
-  33%, 63% { transform: translateX(-100%); }
-  66%, 97% { transform: translateX(-200%); }
+  0% { transform: translateX(0); }
+  33.33% { transform: translateX(-100%); }
+  66.66% { transform: translateX(-200%); }
   100% { transform: translateX(0); }
 }
-
 .animate-carousel {
-  animation: carousel 15s infinite;
-  width: 300%; /* Ensure all slides are visible during animation */
+  animation: carousel 9s infinite;
+}
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
 }
 
-/* Card hover transition */
-.transition-transform {
-  transition: transform 0.3s ease;
+.carousel-slides {
+  display: flex;
+  transition: transform 3s ease-in-out;
+}
+.carousel-slide {
+  flex-shrink: 0;
+  will-change: transform;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* Parallax base styles */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Background split */
-.relative {
-  min-height: 100vh; /* Ensure background covers full height */
+.parallax-container {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-/* Carousel positioning */
-.w-full.relative {
-  margin-top: -2rem; /* Adjust overlap as needed */
-  margin-bottom: 4rem;
-  z-index: 20;
+/* Enhanced parallax effect for the carousel */
+.carousel-parallax {
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .grid-cols-1 {
-    grid-template-columns: 1fr;
-  }
-  
-  .grid-cols-3 {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-  
-  .animate-carousel {
-    width: 300%; /* Maintain width for mobile */
-  }
+/* Smooth scrolling for parallax */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Parallax layers */
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax-layer-base {
+  transform: translateZ(0);
+}
+
+.parallax-layer-back {
+  transform: translateZ(-1px) scale(2);
+}
+
+/* For the horizontal scroll cards */
+.scroll-container {
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+/* Background parallax effect */
+.bg-parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.bg-parallax::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
 }

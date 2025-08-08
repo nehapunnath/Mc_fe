@@ -11,6 +11,9 @@ import OurFoundress from './pages/OurFoundress';
 import History from './pages/History';
 import OurPrincipal from './pages/OurPrincipal';
 import OfficeDetails from './pages/OfficeDetails';
+import Facilities from './pages/Facilities';
+import AssessmentDetails from './pages/AssessmentDetails';
+import SchoolInfo from './pages/SchoolInfo';
 
 function App() {
   // const [isLoading, setIsLoading] = useState(true);
@@ -36,6 +39,10 @@ function App() {
             <Route path='/about/history' element={<History/>}/>
             <Route path='/about/our-principal' element={<OurPrincipal/>}/>
             <Route path='/school-life/office-timings' element={<OfficeDetails/>}/>
+            <Route path='/school-life/facilities' element={<Facilities/>}/>
+            <Route path='/school-life/assessment-details' element={<AssessmentDetails/>}/>
+            <Route path='/school-life/school-info' element={<SchoolInfo/>}/>
+
 
 
             

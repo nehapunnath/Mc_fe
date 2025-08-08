@@ -68,6 +68,8 @@ function About() {
             </div>
           </section>
 
+          {/* carousel */}
+
           <div className="w-70 mx-4 md:mx-8 lg:mx-16 my-12  relative">
             <div className="overflow-hidden rounded-lg w-full mt-40">
               <div
@@ -143,139 +145,122 @@ function About() {
                 </h4>
               </div>
 
-            <div className="px-4 md:px-16 py-12">
-  <div className="relative">
-    <div className="flex overflow-x-auto pb-4 space-x-8 cursor-grab active:cursor-grabbing scrollbar-hide"
-      onMouseDown={(e) => {
-        const slider = e.currentTarget;
-        let isDown = false;
-        let startX = e.pageX - slider.offsetLeft;
-        let scrollLeft = slider.scrollLeft;
+              {/*Gallery Slider*/}
+              <div className="px-4 md:px-16 py-12">
+                <div className="relative">
+                  <div className="flex overflow-x-auto pb-4 space-x-8 cursor-grab active:cursor-grabbing scrollbar-hide"
+                    onMouseDown={(e) => {
+                      const slider = e.currentTarget;
+                      let isDown = false;
+                      let startX = e.pageX - slider.offsetLeft;
+                      let scrollLeft = slider.scrollLeft;
 
-        const mouseDown = () => isDown = true;
-        const mouseLeave = () => isDown = false;
-        const mouseUp = () => isDown = false;
-        const mouseMove = (e) => {
-          if(!isDown) return;
-          e.preventDefault();
-          const x = e.pageX - slider.offsetLeft;
-          const walk = (x - startX) * 2;
-          slider.scrollLeft = scrollLeft - walk;
-        };
+                      const mouseDown = () => isDown = true;
+                      const mouseLeave = () => isDown = false;
+                      const mouseUp = () => isDown = false;
+                      const mouseMove = (e) => {
+                        if (!isDown) return;
+                        e.preventDefault();
+                        const x = e.pageX - slider.offsetLeft;
+                        const walk = (x - startX) * 2;
+                        slider.scrollLeft = scrollLeft - walk;
+                      };
 
-        slider.addEventListener('mousemove', mouseMove);
-        slider.addEventListener('mouseup', mouseUp);
-        slider.addEventListener('mouseleave', mouseLeave);
-        
-        return () => {
-          slider.removeEventListener('mousemove', mouseMove);
-          slider.removeEventListener('mouseup', mouseUp);
-          slider.removeEventListener('mouseleave', mouseLeave);
-        };
-      }}
-    >
-      {/* Card 1 */}
-      <div className="relative flex-shrink-0 w-[24rem] h-[32rem] group">
-        <img
-          src="https://static.toiimg.com/thumb/107582720/107582720.jpg?height=746&width=420&resizemode=76&imgsize=86560"
-          alt="Value-Based Education"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
-          <div className="absolute bottom-0 left-0 w-full p-8">
-            <h4 className="text-2xl font-bold text-white mb-3">
-              Value-Based Education
-            </h4>
-            <p className="text-gray-200 text-base">
-              MCCS blends academic excellence with moral and spiritual values, shaping well-rounded individuals.
-            </p>
-          </div>
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#541212] via-[#541212]/40 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300 pointer-events-none"></div>
-      </div>
+                      slider.addEventListener('mousemove', mouseMove);
+                      slider.addEventListener('mouseup', mouseUp);
+                      slider.addEventListener('mouseleave', mouseLeave);
 
-      {/* Card 2 */}
-      <div className="relative flex-shrink-0 w-[24rem] h-[32rem] group">
-        <img
-          src="https://thumbs.dreamstime.com/b/multiracial-hands-making-circle-13180691.jpg"
-          alt="Experienced Faculty"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
-          <div className="absolute bottom-0 left-0 w-full p-8">
-            <h4 className="text-2xl font-bold text-white mb-3">
-              Experienced and Caring Faculty
-            </h4>
-            <p className="text-gray-200 text-base">
-              Our dedicated teachers inspire learning through personal attention and commitment.
-            </p>
-          </div>
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#541212] via-[#541212]/40 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300 pointer-events-none"></div>
-      </div>
+                      return () => {
+                        slider.removeEventListener('mousemove', mouseMove);
+                        slider.removeEventListener('mouseup', mouseUp);
+                        slider.removeEventListener('mouseleave', mouseLeave);
+                      };
+                    }}
+                  >
+                    {/* Card 1 */}
+                    <div className="relative flex-shrink-0 w-[24rem] h-[32rem] group">
+                      <img
+                        src="https://static.toiimg.com/thumb/107582720/107582720.jpg?height=746&width=420&resizemode=76&imgsize=86560"
+                        alt="Value-Based Education"
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
+                        <div className="absolute bottom-0 left-0 w-full p-8">
+                          <h4 className="text-2xl font-bold text-white mb-3">
+                            Value-Based Education
+                          </h4>
+                          <p className="text-gray-200 text-base">
+                            MCCS blends academic excellence with moral and spiritual values, shaping well-rounded individuals.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#541212] via-[#541212]/40 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300 pointer-events-none"></div>
+                    </div>
 
-      {/* Card 3 */}
-      <div className="relative flex-shrink-0 w-[24rem] h-[32rem] group">
-        <img
-          src="https://photos.peopleimages.com/picture/201712/1628732-gathered-for-the-sake-of-growth-fit_400_400.jpg"
-          alt="Holistic Development"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
-          <div className="absolute bottom-0 left-0 w-full p-8">
-            <h4 className="text-2xl font-bold text-white mb-3">
-              Holistic Development
-            </h4>
-            <p className="text-gray-200 text-base">
-              From academics to arts and sports, students receive well-balanced education.
-            </p>
-          </div>
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#541212] via-[#541212]/40 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300 pointer-events-none"></div>
-      </div>
+                    {/* Card 2 */}
+                    <div className="relative flex-shrink-0 w-[24rem] h-[32rem] group">
+                      <img
+                        src="https://thumbs.dreamstime.com/b/multiracial-hands-making-circle-13180691.jpg"
+                        alt="Experienced Faculty"
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
+                        <div className="absolute bottom-0 left-0 w-full p-8">
+                          <h4 className="text-2xl font-bold text-white mb-3">
+                            Experienced and Caring Faculty
+                          </h4>
+                          <p className="text-gray-200 text-base">
+                            Our dedicated teachers inspire learning through personal attention and commitment.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#541212] via-[#541212]/40 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300 pointer-events-none"></div>
+                    </div>
 
-      {/* Card 4 */}
-      {/* <div className="relative flex-shrink-0 w-[24rem] h-[32rem] group">
-        <img
-          src="https://mccsblr.edu.in/wp-content/uploads/2025/07/June-2025-Photos-14.jpg"
-          alt="Modern Infrastructure"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
-          <div className="absolute bottom-0 left-0 w-full p-8">
-            <h4 className="text-2xl font-bold text-white mb-3">
-              Modern Infrastructure
-            </h4>
-            <p className="text-gray-200 text-base">
-              State-of-the-art facilities that enhance the learning experience.
-            </p>
-          </div>
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#541212] via-[#541212]/40 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300 pointer-events-none"></div>
-      </div> */}
+                    {/* Card 3 */}
+                    <div className="relative flex-shrink-0 w-[24rem] h-[32rem] group">
+                      <img
+                        src="https://photos.peopleimages.com/picture/201712/1628732-gathered-for-the-sake-of-growth-fit_400_400.jpg"
+                        alt="Holistic Development"
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
+                        <div className="absolute bottom-0 left-0 w-full p-8">
+                          <h4 className="text-2xl font-bold text-white mb-3">
+                            Holistic Development
+                          </h4>
+                          <p className="text-gray-200 text-base">
+                            From academics to arts and sports, students receive well-balanced education.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#541212] via-[#541212]/40 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300 pointer-events-none"></div>
+                    </div>
 
-      {/* Card 5 */}
-      <div className="relative flex-shrink-0 w-[24rem] h-[32rem] group">
-        <img
-          src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-          alt="Community Engagement"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
-          <div className="absolute bottom-0 left-0 w-full p-8">
-            <h4 className="text-2xl font-bold text-white mb-3">
-               Innovative Learning Environment
-            </h4>
-            <p className="text-gray-200 text-base">
-              Our modern classrooms foster creativity and collaboration among students.
-            </p>
-          </div>
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#541212] via-[#541212]/40 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300 pointer-events-none"></div>
-      </div>
-    </div>
-  </div>
-</div>
+                  
+
+                    {/* Card 5 */}
+                    <div className="relative flex-shrink-0 w-[24rem] h-[32rem] group">
+                      <img
+                        src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                        alt="Community Engagement"
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent">
+                        <div className="absolute bottom-0 left-0 w-full p-8">
+                          <h4 className="text-2xl font-bold text-white mb-3">
+                            Innovative Learning Environment
+                          </h4>
+                          <p className="text-gray-200 text-base">
+                            Our modern classrooms foster creativity and collaboration among students.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#541212] via-[#541212]/40 to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300 pointer-events-none"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
         </div>

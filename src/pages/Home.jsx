@@ -2,13 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import CampusAndBeyond from '../components/CampusAndBeyond';
 import About from '../components/About';
-// import principal from '../assets/principal.jpg';
 import mc2 from '../assets/mc2.JPG';
 import mc3 from '../assets/mc3.JPG';
 import mc6 from '../assets/mc4.JPG';
 import mc7 from '../assets/mc7.JPG';
 import s2 from '../assets/s2.JPG';
-// import mc4 from '../assets/mc4.jpg';
 import s1 from '../assets/s1.JPG';
 import principal from '../assets/principal.JPG';
 

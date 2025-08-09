@@ -54,11 +54,14 @@ const Newsletter = () => {
       <div className="relative">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 bg-[#541212] opacity-90"></div>
-        <img 
+        <div className="relative z-0 flex justify-center items-center h-64 md:h-96 bg-[#541212]">
+
+        {/* <img 
           src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
           alt="Newsletter Banner" 
           className="w-full h-64 md:h-96 object-cover"
-        />
+        /> */}
+        </div>
         
         {/* Banner Content */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 ">

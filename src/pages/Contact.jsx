@@ -31,7 +31,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-[#541212]">Address</h3>
-                    <p className="text-gray-700 mt-1">Mount Carmel Central School<br />Mangalore, Karnataka<br />India - 575001</p>
+                    <p className="text-gray-700 mt-1">Mount Carmel School<br />Mangalore, Karnataka<br />India - 575001</p>
                   </div>
                 </div>
                 
@@ -133,7 +133,7 @@ const Contact = () => {
       {/* Google Map Section */}
       <div className="w-full h-96 md:h-[500px]">
         <iframe
-          title="Mount Carmel Central School Location"
+          title="Mount Carmel School Location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.012084396642!2d74.8562093153431!3d12.91451999089618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x41e1d3225f5b4c8e!2sMount%20Carmel%20Central%20School!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
           width="100%"
           height="100%"

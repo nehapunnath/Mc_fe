@@ -28,14 +28,14 @@ const ExploreDropdown = ({ onMouseLeave }) => {
         <div className="relative group h-full min-h-[500px]">
           <img 
             src={mc9} 
-            alt="Mount Carmel Central School Campus"
+            alt="Mount Carmel School Campus"
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#541212cc] to-transparent"></div>
           <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-            <h2 className="text-2xl font-bold mb-2">Mount Carmel Central School</h2>
+            <h2 className="text-2xl  font-bold mb-2">Mount Carmel School</h2>
             <p className="text-white/90">
-              Learn about our journey, campus life, academics, and more—your complete guide to Mount Carmel Central School.
+              Learn about our journey, campus life, academics, and more—your complete guide to Mount Carmel School.
             </p>
           </div>
         </div>
@@ -55,7 +55,7 @@ const ExploreDropdown = ({ onMouseLeave }) => {
             ].map((item) => (
               <li key={item.title} className="group">
                 <NavLink 
-                  to={`/about/${item.title.toLowerCase().replace(/\s+/g, '-')}`}
+                  to={`/${item.title.toLowerCase().replace(/\s+/g, '-')}`}
                   className="flex items-start py-2 hover:bg-gray-50 px-2 rounded transition-colors"
                 >
                   <span className="text-[#541212] mr-3 mt-1">{item.icon}</span>
@@ -84,7 +84,7 @@ const ExploreDropdown = ({ onMouseLeave }) => {
             ].map((item) => (
               <li key={item.title} className="group">
                 <NavLink 
-                  to={`/school-life/${item.title.toLowerCase().replace(/\s+/g, '-')}`}
+                  to={`/${item.title.toLowerCase().replace(/\s+/g, '-')}`}
                   className="flex items-start py-2 hover:bg-gray-50 px-2 rounded transition-colors"
                 >
                   <span className="text-[#541212] mr-3 mt-1">{item.icon}</span>
@@ -112,7 +112,7 @@ const ExploreDropdown = ({ onMouseLeave }) => {
             ].map((item) => (
               <li key={item.title} className="group">
                 <NavLink 
-                  to={`/get-involved/${item.title.toLowerCase().replace(/\s+/g, '-')}`}
+                  to={`/${item.title.toLowerCase().replace(/\s+/g, '-')}`}
                   className="flex items-start py-2 hover:bg-gray-50 px-2 rounded transition-colors"
                 >
                   <span className="text-[#541212] mr-3 mt-1">{item.icon}</span>

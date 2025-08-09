@@ -49,7 +49,7 @@ const Newsletter = () => {
   ];
 
   return (
-    <div className="w-full bg-gray-50">
+    <div className="w-full bg-[#ebd8b4]">
       {/* Banner Section */}
       <div className="relative">
         {/* Background Image with Overlay */}

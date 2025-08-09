@@ -57,13 +57,13 @@ function About() {
           <section className="pt-16 pb-8 mt-20">
             <div className="max-w-6xl mx-auto px-6 text-center ">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Mount Carmel Central School
+                Mount Carmel School
               </h2>
               <h3 className="text-2xl md:text-3xl font-semibold text-[#c6795a] mb-6">
                 Igniting Young Minds for a Brighter Future
               </h3>
               <p className="text-lg text-white max-w-3xl mx-auto">
-                At Mount Carmel Central School, we nurture curiosity, values, and confidence to help students grow into compassionate, capable future leaders.
+                At Mount Carmel School, we nurture curiosity, values, and confidence to help students grow into compassionate, capable future leaders.
               </p>
             </div>
           </section>
@@ -190,7 +190,7 @@ function About() {
                             Value-Based Education
                           </h4>
                           <p className="text-gray-200 text-base">
-                            MCCS blends academic excellence with moral and spiritual values, shaping well-rounded individuals.
+                            MCS blends academic excellence with moral and spiritual values, shaping well-rounded individuals.
                           </p>
                         </div>
                       </div>

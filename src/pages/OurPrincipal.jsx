@@ -9,7 +9,7 @@ const OurPrincipal = () => {
       <div className="relative bg-[#541212] py-20 md:py-28">
         <div className="container mx-auto px-4 text-center text-white relative z-10">
           <div className="flex justify-center mb-4">
-            <div className=" p-4 rounded-full">
+            <div className="bg-white/20 p-4 rounded-full">
               <FaUserTie className="text-3xl" />
             </div>
           </div>
@@ -57,8 +57,8 @@ const OurPrincipal = () => {
                   </p>
                   <p className="font-semibold">
                     With warm regards,<br />
-                    {/* [Principal's Name]<br /> */}
-                    Principal, Mount Carmel Central School
+                    Nakshathra<br />
+                    Principal, Mount Carmel  School
                   </p>
                 </div>
               </div>

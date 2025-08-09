@@ -20,7 +20,7 @@ function Footer() {
           
           {/* Column 1: School Info */}
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-2xl font-bold mb-4">Mount Carmel Central School</h3>
+            <h3 className="text-2xl font-bold mb-4">Mount Carmel School</h3>
             <div className="w-32 h-32 mb-4">
               <img 
                 src= {logo}
@@ -87,7 +87,7 @@ function Footer() {
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="mr-3 text-[#c6795a]" />
-                <a href="mailto:info@mccs.edu.in">info@mccs.edu.in</a>
+                <a href="mailto:info@mcs.edu.in">info@mcs.edu.in</a>
               </li>
               <li className="flex items-center space-x-4 mt-4">
                 <a href="#" className="hover:text-[#ebd8b4] transition-colors duration-300">
@@ -112,7 +112,7 @@ function Footer() {
         
         {/* Copyright */}
         <div className="text-center text-sm text-[#ebd8b4]/80">
-          © 2025 Mount Carmel Central School. All Rights Reserved.
+          © 2025 Mount Carmel School. All Rights Reserved.
         </div>
       </div>
     </footer>

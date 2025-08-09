@@ -25,21 +25,7 @@ const Header = () => {
     {
       name: 'Login',
       href: '/login',
-      hasDropdown: true,
-      dropdownItems: [
-        {
-          name: 'Parent Login',
-          href: '/parent-login',
-          description: 'Access updates, reports, and communication.',
-          icon: <FaUserFriends className="text-[#541212] mr-2" />,
-        },
-        {
-          name: 'Student Login',
-          href: '/student-login',
-          description: 'Connect to learning and resources.',
-          icon: <FaUserGraduate className="text-[#541212] mr-2" />,
-        },
-      ],
+
     },
   ];
 
@@ -79,7 +65,7 @@ const Header = () => {
           <NavLink
             to="/"
             className={({ isActive }) => 
-              `text-lg font-medium hover:underline underline-offset-4 decoration-2 ${
+              `text-lg font-medium text-white hover:text-gray-200 hover:underline underline-offset-4 decoration-2 ${
                 isActive ? 'underline' : ''
               }`
             }
@@ -94,7 +80,7 @@ const Header = () => {
           {/* Explore MCS */}
           <div className="relative">
             <button
-              className={`text-lg font-medium hover:underline underline-offset-4 decoration-2 flex items-center ${
+              className={`text-lg font-medium text-white hover:text-gray-200 hover:underline underline-offset-4 decoration-2 flex items-center ${
                 activePage === 'Explore MCS' ? 'underline' : ''
               }`}
               onMouseEnter={() => setShowExploreDropdown(true)}
@@ -123,7 +109,7 @@ const Header = () => {
                 <NavLink
                   to={item.href}
                   className={({ isActive }) => 
-                    `text-lg font-medium hover:underline underline-offset-4 decoration-2 ${
+                    `text-lg font-medium text-white hover:text-gray-200 hover:underline underline-offset-4 decoration-2 ${
                       isActive ? 'underline' : ''
                     }`
                   }
@@ -137,7 +123,7 @@ const Header = () => {
               ) : (
                 <>
                   <button
-                    className={`text-lg font-medium hover:underline underline-offset-4 decoration-2 flex items-center ${
+                    className={`text-lg font-medium text-white hover:text-gray-200 hover:underline underline-offset-4 decoration-2 flex items-center ${
                       activePage === 'Login' ? 'underline' : ''
                     }`}
                     onMouseEnter={() => setShowLoginDropdown(true)}

@@ -1,55 +1,62 @@
-import { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import PreLoader from './components/PreLoader';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Contact from './pages/Contact';
-import NewsLetter from './pages/NewsLetter';
-import OurPatroness from './pages/OurPatroness';
-import OurFoundress from './pages/OurFoundress';
-import History from './pages/History';
-import OurPrincipal from './pages/OurPrincipal';
-import OfficeDetails from './pages/OfficeDetails';
-import Facilities from './pages/Facilities';
-import AssessmentDetails from './pages/AssessmentDetails';
-import SchoolInfo from './pages/SchoolInfo';
+import { useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
+import NewsLetter from "./pages/NewsLetter";
+import OurPatroness from "./pages/OurPatroness";
+import OurFoundress from "./pages/OurFoundress";
+import History from "./pages/History";
+import OurPrincipal from "./pages/OurPrincipal";
+import OfficeDetails from "./pages/OfficeDetails";
+import Facilities from "./pages/Facilities";
+import AssessmentDetails from "./pages/AssessmentDetails";
+import SchoolInfo from "./pages/SchoolInfo";
+import MandotaryPubicDisclosure from "./pages/MandotaryPubicDisclosure";
+import UpcomingEvents from "./pages/UpcomingEvents";
+import Gallery from "./pages/Gallery";
+import Careers from "./pages/Careers";
+import Admissions from "./pages/Admissions";
+import StaffDetails from "./pages/StaffDetails";
+import AuthPage from "./pages/AuthPage";
+import ParentDashboard from "./pages/ParentDashboard";
 
 function App() {
-  // const [isLoading, setIsLoading] = useState(true);
+  const location = useLocation();
 
-  // useEffect(() => {
-  //   const timeout = setTimeout(() => setIsLoading(false), 2000);
-  //   return () => clearTimeout(timeout);
-  // }, []);
+  // Pages without header/footer
+  const noHeaderFooterRoutes = ["/login", "/parent-dashboard"];
+  const hideHeaderFooter = noHeaderFooterRoutes.includes(location.pathname);
 
   return (
     <>
-      {/* {isLoading ? (
-        <PreLoader onFinish={() => setIsLoading(false)} /> */}
-      {/* ) : ( */}
-        <>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path='/contact' element={<Contact/>}/>
-            <Route path='/newsletter' element={<NewsLetter/>}/>
-            <Route path='/about/our-patroness' element={<OurPatroness/>}/>
-            <Route path='/about/our-foundress' element={<OurFoundress/>}/>
-            <Route path='/about/history' element={<History/>}/>
-            <Route path='/about/our-principal' element={<OurPrincipal/>}/>
-            <Route path='/school-life/office-timings' element={<OfficeDetails/>}/>
-            <Route path='/school-life/facilities' element={<Facilities/>}/>
-            <Route path='/school-life/assessment-details' element={<AssessmentDetails/>}/>
-            <Route path='/school-life/school-info' element={<SchoolInfo/>}/>
+      {/* {!hideHeaderFooter && <Header />} */}
+      <Header/>
 
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/newsletter" element={<NewsLetter />} />
+        <Route path="/our-patroness" element={<OurPatroness />} />
+        <Route path="/our-foundress" element={<OurFoundress />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/our-principal" element={<OurPrincipal />} />
+        <Route path="/staff-details" element={<StaffDetails />} />
+        <Route path="/office-timings" element={<OfficeDetails />} />
+        <Route path="/facilities" element={<Facilities />} />
+        <Route path="/assessment-details" element={<AssessmentDetails />} />
+        <Route path="/school-info" element={<SchoolInfo />} />
+        <Route path="/mandatory-public-disclosure"element={<MandotaryPubicDisclosure />}/>
+        <Route path="/upcoming-events" element={<UpcomingEvents />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/admissions" element={<Admissions />} />
+        <Route path="/login" element={<AuthPage />} />
+        <Route path="/parent-dashboard" element={<ParentDashboard />} />
+      </Routes>
 
-
-            
-          </Routes>
-          <Footer/>
-        </>
-      {/* )} */}
+      {!hideHeaderFooter && <Footer />}
     </>
   );
 }

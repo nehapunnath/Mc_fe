@@ -1,7 +1,9 @@
 import React from 'react'
 import '../styles/Home.css'
 import { Link } from 'react-router-dom';
-
+import s2 from '../assets/s2.JPG';
+import s1 from '../assets/s1.JPG';
+import mc4 from '../assets/mc4.JPG'
 function CampusAndBeyond() {
   return (
     
@@ -13,7 +15,7 @@ function CampusAndBeyond() {
                         </h2>
                         <div className="w-24 h-1 bg-[#541212] mx-auto mb-10"></div>
                         <p className="text-base sm:text-lg text-gray-700 text-center mb-12 px-4">
-                            Discover the vibrant and enriching experiences that define life at Mount Carmel Central School, from engaging events to state-of-the-art facilities.
+                            Discover the vibrant and enriching experiences that define life at Mount Carmel School, from engaging events to state-of-the-art facilities.
                         </p>
                         <br /><br />
 
@@ -27,7 +29,7 @@ function CampusAndBeyond() {
                                         <div className="absolute w-full h-full backface-hidden rounded-lg shadow-xl overflow-hidden">
                                             <div className="relative w-full h-full bg-[#1E3A8A] bg-opacity-80">
                                                 <img
-                                                    src="https://mccsblr.edu.in/wp-content/uploads/2025/07/June-2025-Photos-10.jpg"
+                                                    src={mc4}
                                                     alt="Gallery"
                                                     className="w-full h-full object-cover opacity-50"
                                                     loading="lazy"
@@ -54,8 +56,8 @@ function CampusAndBeyond() {
                                     </div>
                                 </div>
                                 <Link
-                                    to="/gallery"
-                                    className="mt-6 px-4 py-1 sm:px-6 sm:py-2 text-white bg-[#1E3A8A] font-semibold rounded-full hover:bg-gray-200 transition text-sm sm:text-base"
+                                    to="/upcoming-events"
+                                    className="mt-6 px-4 py-1 sm:px-6 sm:py-2 text-white bg-[#1E3A8A] font-semibold rounded-full  transition text-sm sm:text-base"
                                 >
                                      View Events
                                 </Link>
@@ -69,7 +71,7 @@ function CampusAndBeyond() {
                                         <div className="absolute w-full h-full backface-hidden rounded-lg shadow-xl overflow-hidden">
                                             <div className="relative w-full h-full bg-[#7C2D12] bg-opacity-80">
                                                 <img
-                                                    src="https://mccsblr.edu.in/wp-content/uploads/2025/07/June-2025-Photos-12.jpg"
+                                                    src={s2}
                                                     alt="Gallery"
                                                     className="w-full h-full object-cover opacity-50"
                                                     loading="lazy"
@@ -97,7 +99,7 @@ function CampusAndBeyond() {
                                 </div>
                                 <Link
                                     to="/gallery"
-                                    className="mt-6 px-4 py-1 sm:px-6 sm:py-2 text-white bg-[#7C2D12] font-semibold rounded-full hover:bg-gray-200 transition text-sm sm:text-base"
+                                    className="mt-6 px-4 py-1 sm:px-6 sm:py-2 text-white bg-[#7C2D12] font-semibold rounded-full  transition text-sm sm:text-base"
                                 >
                                     View Gallery
                                 </Link>
@@ -111,7 +113,7 @@ function CampusAndBeyond() {
                                         <div className="absolute w-full h-full backface-hidden rounded-lg shadow-xl overflow-hidden">
                                             <div className="relative w-full h-full bg-[#15803D] bg-opacity-80">
                                                 <img
-                                                    src="https://mccsblr.edu.in/wp-content/uploads/2025/07/June-2025-Photos-14.jpg"
+                                                    src={s1}
                                                     alt="Facilities"
                                                     className="w-full h-full object-cover opacity-50"
                                                     loading="lazy"
@@ -139,7 +141,7 @@ function CampusAndBeyond() {
                                 </div>
                                 <Link
                                     to="/facilities"
-                                    className="mt-6 px-4 py-1 sm:px-6 sm:py-2 text-white bg-[#15803D] font-semibold rounded-full hover:bg-gray-200 transition text-sm sm:text-base"
+                                    className="mt-6 px-4 py-1 sm:px-6 sm:py-2 text-white bg-[#15803D] font-semibold rounded-full  transition text-sm sm:text-base"
                                 >
                                     View Facilities
                                 </Link>

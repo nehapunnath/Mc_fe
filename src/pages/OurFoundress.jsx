@@ -10,11 +10,11 @@ const OurFoundress = () => {
         <div className="absolute inset-0 bg-[#541212] opacity-80 z-10"></div>
 
         <div className="relative z-0 flex justify-center items-center h-64 md:h-96 bg-[#541212]">
-          <img 
+          {/* <img 
             src="https://mountcarmelcollege.ac.in/content/uploads/2024/04/Teresa-of-St.-Rose-of-Lima.jpg"
             alt="Mother Teresa of St. Rose of Lima"
             className="h-full w-auto object-contain"
-          />
+          /> */}
         </div>
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-20">
@@ -43,7 +43,7 @@ const OurFoundress = () => {
 
             {/* Brief History Button */}
             <div className="flex justify-center mb-12">
-                <Link to="/about/history">
+                <Link to="/history">
                 <button className="bg-[#541212] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#3a0d0d] transition">
                 Brief History
               </button>

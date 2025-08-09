@@ -26,7 +26,7 @@ const SchoolInfo = () => {
           {/* Three Boxes Section */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {/* Fee Structure Box */}
-            <div className="bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+            <div className=" rounded-lg shadow-md border-2 border-[#541212] hover:shadow-lg transition-shadow duration-300">
               <div className="p-6">
                 <div className="bg-[#541212]/10 p-4 rounded-full inline-block mb-4">
                   <FaFileAlt className="text-2xl text-[#541212]" />
@@ -45,7 +45,7 @@ const SchoolInfo = () => {
             </div>
 
             {/* Affidavit Box */}
-            <div className="bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+            <div className=" rounded-lg shadow-md border-2 border-[#541212] hover:shadow-lg transition-shadow duration-300">
               <div className="p-6">
                 <div className="bg-[#541212]/10 p-4 rounded-full inline-block mb-4">
                   <FaBalanceScale className="text-2xl text-[#541212]" />
@@ -64,7 +64,7 @@ const SchoolInfo = () => {
             </div>
 
             {/* Infrastructure Box */}
-            <div className="bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow duration-300">
+            <div className=" rounded-lg shadow-md border-2 border-[#541212] hover:shadow-lg transition-shadow duration-300">
               <div className="p-6">
                 <div className="bg-[#541212]/10 p-4 rounded-full inline-block mb-4">
                   <FaSchool className="text-2xl text-[#541212]" />

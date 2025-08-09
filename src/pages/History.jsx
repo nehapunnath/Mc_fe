@@ -29,7 +29,7 @@ const History = () => {
                         <div className="w-full">
                             <img
                                 src={s1}
-                                alt="MCCS Building"
+                                alt="MCS Building"
                                 className="w-full h-96 md:h-[28rem] object-cover"
                             />
                         </div>
@@ -41,16 +41,16 @@ const History = () => {
                             <h3 className="text-xl text-gray-700 mb-6">A Legacy Rooted in Excellence and Values</h3>
                             <div className="space-y-4  text-black text-xl leading-relaxed">
                                 <p>
-                                    Mount Carmel Central School (MCCS) established in 2017 under the visionary leadership of Mount Carmel College, one of India's premier institutions dedicated to empowering young women through education. The school is managed by the Carmelite Sisters of St. Teresa (CSST), a congregation founded in 1887 by Mother Teresa of St. Rose of Lima, who envisioned a society transformed through love, learning, and service.
+                                    Mount Carmel School (MCS) established in 2017 under the visionary leadership of Mount Carmel College, one of India's premier institutions dedicated to empowering young women through education. The school is managed by the Carmelite Sisters of St. Teresa (CSST), a congregation founded in 1887 by Mother Teresa of St. Rose of Lima, who envisioned a society transformed through love, learning, and service.
                                 </p>
                                 <p>
-                                    Though MCCS is a relatively young institution, it inherits a rich educational heritage spanning over 75 years. The founding ideals of the CSST — academic excellence, moral integrity, and service to society — remain the cornerstone of our mission today.
+                                    Though MCS is a relatively young institution, it inherits a rich educational heritage spanning over 75 years. The founding ideals of the CSST — academic excellence, moral integrity, and service to society — remain the cornerstone of our mission today.
                                 </p>
                                 <p>
-                                    Affiliated to the Central Board of Secondary Education (CBSE), New Delhi (Affiliation No. 831084), MCCS has quickly earned a reputation for its vibrant learning environment, strong academic foundation, and value-based approach to education. The school was founded to extend the legacy of Mount Carmel's holistic education to younger students, fostering intellectual curiosity, leadership, and character from an early age.
+                                    Affiliated to the Central Board of Secondary Education (CBSE), New Delhi (Affiliation No. 831084), MCS has quickly earned a reputation for its vibrant learning environment, strong academic foundation, and value-based approach to education. The school was founded to extend the legacy of Mount Carmel's holistic education to younger students, fostering intellectual curiosity, leadership, and character from an early age.
                                 </p>
                                 <p>
-                                    Our campus stands as a symbol of our commitment to providing a nurturing space where students not only learn but also grow into responsible, compassionate citizens. With a dedicated faculty, modern facilities, and a spirit rooted in faith and service, MCCS continues to build on its strong foundation, preparing students to meet the challenges of a changing world with confidence and purpose.
+                                    Our campus stands as a symbol of our commitment to providing a nurturing space where students not only learn but also grow into responsible, compassionate citizens. With a dedicated faculty, modern facilities, and a spirit rooted in faith and service, MCS continues to build on its strong foundation, preparing students to meet the challenges of a changing world with confidence and purpose.
                                 </p>
                             </div>
                         </div>
@@ -58,20 +58,20 @@ const History = () => {
                         {/* Buttons Section */}
                         <div className=" px-8 py-6 bg-[#ebd8b4]">
                             <div className="flex flex-wrap justify-center gap-4 bg-[#ebd8b4]">
-                                <Link to="/about/our-foundress">
+                                <Link to="/our-foundress">
                                     <button className="flex items-center bg-[#541212] text-white px-6 py-3 rounded-full font-medium hover:bg-[#3a0d0d] transition">
                                         Our Foundress
                                     </button>
                                 </Link>
 
-                                <Link to="/about/our-principal">
+                                <Link to="/our-principal">
                                 <button className="flex items-center bg-[#541212] text-white px-6 py-3 rounded-full font-medium hover:bg-[#3a0d0d] transition">
                                     Our Principal
                                 </button>
                                 </Link>
 
                                 
-                                <Link to="/about/staff-details">
+                                <Link to="/staff-details">
                                 <button className="flex items-center bg-[#541212] text-white px-6 py-3 rounded-full font-medium hover:bg-[#3a0d0d] transition">
                                     Teaching Staff
                                 </button>

@@ -10,14 +10,12 @@ const OurPatroness = () => {
             {/* Banner Section */}
             <div className="relative">
                 <div className="absolute inset-0 bg-[#541212] opacity-80"></div>
-                <img
-                    src={ladyofMc}
-                    alt="Our Lady of Mount Carmel"
-                    className="w-full h-64 md:h-96 object-cover object-top"
-                />
+        <div className="relative z-0 flex justify-center items-center h-64 md:h-96 bg-[#541212]">
+            </div>
+
 
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
-                    <div className="p-4 mb-4">
+                    <div className="bg-white/20 p-4 mb-4 rounded-full">
                         <FaCrown className="text-3xl md:text-4xl" />
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold mb-2 leading-tight">Our Patroness</h1>
@@ -66,7 +64,7 @@ const OurPatroness = () => {
                         </div>
 
                         <div className="mt-10">
-                            <Link to="/about/our-foundress">
+                            <Link to="/our-foundress">
                                 <button className="bg-[#891313] text-white px-4 py-3 rounded-full text-sm font-semibold hover:bg-[#6e1010] transition tracking-wide">
                                     About Our Foundress
                                 </button>

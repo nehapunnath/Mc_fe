@@ -10,7 +10,6 @@ import s2 from '../assets/s2.JPG';
 import s1 from '../assets/s1.JPG';
 import principal from '../assets/principal.JPG';
 
-
 function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   
@@ -136,13 +135,16 @@ function Home() {
                 </p>
                 
                 <div className="pt-2 sm:pt-4">
-                  <p className="font-semibold text-lg text-[#541212]">- Dr. Susan Mathew</p>
+                  <p className="font-semibold text-lg text-[#541212]">- Nakshathra</p>
                   <p className="text-gray-600 text-sm sm:text-base">Principal, Mount Carmel School</p>
                 </div>
                 
-                <button className="mt-4 sm:mt-6 px-6 py-2 sm:px-8 sm:py-3 bg-[#541212] text-white rounded-lg hover:bg-[#3a0d0d] transition duration-300 text-sm sm:text-base">
+                <Link to={'/our-principal'}>
+                  <button className="mt-4 sm:mt-6 px-6 py-2 sm:px-8 sm:py-3 bg-[#541212] text-white rounded-lg hover:bg-[#3a0d0d] transition duration-300 text-sm sm:text-base">
                   Read More
                 </button>
+                </Link>
+              
               </div>
               
               {/* Right Side - Principal's Image */}
@@ -249,10 +251,13 @@ function Home() {
             </p>
             
             {/* Contact button with arrow */}
-            <button className="bg-[#541212] hover:bg-[#3a0d0d] text-white font-medium py-3 px-8 rounded-md transition-colors duration-300 flex items-center mx-auto gap-2">
+            <Link to={'/contact'}>
+              <button className="bg-[#541212] hover:bg-[#3a0d0d] text-white font-medium py-3 px-8 rounded-md transition-colors duration-300 flex items-center mx-auto gap-2">
               Contact Us 
               <i className="fa-solid fa-arrow-right text-white"></i>
             </button>
+            </Link>
+          
           </div>
         </section>
       </div>

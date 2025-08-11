@@ -107,7 +107,6 @@ function Footer() {
           </div>
         </div>
         
-        {/* Divider */}
         <div className="border-t border-[#c6795a]/30 my-6"></div>
         
         {/* Copyright */}

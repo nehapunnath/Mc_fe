@@ -1,4 +1,3 @@
-// PreLoader.jsx
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -6,7 +5,7 @@ const PreLoader = ({ onFinish }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       onFinish();
-    }, 1600); // Adjust timing to match your design
+    }, 1600); 
 
     return () => clearTimeout(timer);
   }, [onFinish]);

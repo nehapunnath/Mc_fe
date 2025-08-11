@@ -31,7 +31,6 @@ function App() {
 
   return (
     <>
-      {/* {!hideHeaderFooter && <Header />} */}
       <Header/>
 
       <Routes>

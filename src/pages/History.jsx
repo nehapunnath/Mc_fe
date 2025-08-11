@@ -25,7 +25,7 @@ const History = () => {
             <div className="w-full bg-[#ebd8b4] py-12 md:py-16">
                 <div className=" w-full  px-4 ">
                     <div className="max-w-7xl mx-auto bg-[#ebd8b4] r overflow-hidden">
-                        {/* Image Section - Now at the top */}
+                        {/* Image Section */}
                         <div className="w-full">
                             <img
                                 src={s1}
@@ -34,7 +34,7 @@ const History = () => {
                             />
                         </div>
 
-                        {/* Content Below Image */}
+                        {/* Content  */}
                         <div className="p-8">
                             <p className="text-sm text-[#541212] bg-[#ebd8b4] font-semibold mb-2">ABOUT US</p>
                             <h2 className="text-3xl md:text-4xl font-bold text-[#541212] mb-4">History</h2>

@@ -41,7 +41,6 @@ const OurFoundress = () => {
               />
             </div>
 
-            {/* Brief History Button */}
             <div className="flex justify-center mb-12">
                 <Link to="/history">
                 <button className="bg-[#541212] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#3a0d0d] transition">

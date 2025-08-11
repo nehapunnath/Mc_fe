@@ -6,7 +6,7 @@ const OfficeDetails = () => {
         <div className="w-full bg-[#ebd8b4]">
             {/* Banner Section */}
             <div className="relative bg-[#541212] py-20 md:py-28">
-                <div className="absolute inset-0 opacity-10 bg-[url('https://mccsblr.edu.in/wp-content/uploads/2023/06/pattern.png')]"></div>
+                <div className="absolute inset-0 opacity-10 "></div>
                 <div className="container mx-auto px-4 text-center text-white relative z-10">
                     <div className="flex justify-center mb-4">
                         <div className="bg-white/20 p-4 rounded-full backdrop-blur-sm">
@@ -73,7 +73,6 @@ const OfficeDetails = () => {
                             </div>
                         </div>
 
-                        {/* Contact Button at bottom */}
                         <div className="mt-auto pt-6">
                             <button className="w-full bg-[#541212] text-white px-4 py-3 rounded-lg font-medium hover:bg-[#3a0d0d] transition flex items-center justify-center gap-2">
                                 Contact Us
@@ -109,7 +108,6 @@ const OfficeDetails = () => {
                             </div>
                         </div>
 
-                        {/* Contact Button at bottom */}
                         <div className="mt-auto pt-6">
                             <button className="w-full bg-[#541212] text-white px-4 py-3 rounded-lg font-medium hover:bg-[#3a0d0d] transition flex items-center justify-center gap-2">
                                 Contact Us
@@ -160,7 +158,6 @@ const OfficeDetails = () => {
                             </div>
                         </div>
 
-                        {/* Contact Button at bottom */}
                         <div className="mt-auto pt-6">
                             <button className="w-full bg-[#541212] text-white px-4 py-3 rounded-lg font-medium hover:bg-[#3a0d0d] transition flex items-center justify-center gap-2">
                                 Contact Us

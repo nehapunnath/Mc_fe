@@ -75,7 +75,7 @@ const Gallery = () => {
     <div className="w-full bg-gradient-to-b bg-[#ebd8b4] min-h-screen">
       {/* Banner Section */}
       <div className="relative bg-gradient-to-r from-[#541212] to-[#541212] py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://mccsblr.edu.in/wp-content/uploads/2023/06/pattern.png')] bg-cover"></div>
+        <div className="absolute inset-0 opacity-10  bg-cover"></div>
         <div className="container mx-auto px-6 text-center text-white relative z-10">
           <div className="flex justify-center mb-6 animate-fade-in">
             <div className="bg-white/20 p-5 rounded-full backdrop-blur-lg shadow-lg">

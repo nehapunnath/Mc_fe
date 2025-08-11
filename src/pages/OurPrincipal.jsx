@@ -37,7 +37,7 @@ const OurPrincipal = () => {
               {/* Right Side - Principal's Message */}
               <div className="md:w-2/3 p-8 bg-[#ebd8b4]">
                 <h2 className="text-3xl font-bold text-[#541212] mb-2">Message from Principal's Desk</h2>
-                <div className="w-20 h-1 bg-[#541212] mb-6"></div> {/* Underline */}
+                <div className="w-20 h-1 bg-[#541212] mb-6"></div> 
                 
                 <div className="space-y-4 text-black text-xl leading-relaxed">
                   <p>

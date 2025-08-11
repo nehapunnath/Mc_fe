@@ -29,7 +29,6 @@ function Home() {
   return (
     <>
       <div className="min-h-screen flex flex-col">
-        {/* Background Section with Gradient */}
         <div
           style={{
             background: 'linear-gradient(to right, #541212, #ebd8b4)',
@@ -62,7 +61,7 @@ function Home() {
                   ))}
                 </div>
                 
-                {/* Carousel Indicators (simplified version) */}
+                {/* Carousel Indicators */}
                 <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
                   {carouselImages.map((_, index) => (
                     <button
@@ -74,7 +73,6 @@ function Home() {
                 </div>
               </div>
 
-              {/* Static Image Column */}
               <div className="rounded-lg overflow-hidden shadow-xl transform hover:scale-[1.02] transition duration-500">
                 <img
                   src={s1}
@@ -235,22 +233,18 @@ function Home() {
 
         <section className="py-16 bg-[#ebd8b4]">
           <div className="max-w-7xl mx-auto px-6 text-center">
-            {/* Small heading */}
             <h3 className="text-sm font-semibold text-[#541212] mb-2 uppercase tracking-wider">
               Together We Build Dreams
             </h3>
             
-            {/* Big heading */}
             <h2 className="text-7xl md:text-5xl font-bold text-blak-900 mb-4">
               Empower Your Child's Future
             </h2>
             
-            {/* Medium description */}
             <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
               Reach out to discover the opportunities awaiting your child.
             </p>
             
-            {/* Contact button with arrow */}
             <Link to={'/contact'}>
               <button className="bg-[#541212] hover:bg-[#3a0d0d] text-white font-medium py-3 px-8 rounded-md transition-colors duration-300 flex items-center mx-auto gap-2">
               Contact Us 

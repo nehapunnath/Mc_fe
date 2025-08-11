@@ -52,7 +52,6 @@ const Newsletter = () => {
     <div className="w-full bg-[#ebd8b4]">
       {/* Banner Section */}
       <div className="relative">
-        {/* Background Image with Overlay */}
         <div className="absolute inset-0 bg-[#541212] opacity-90"></div>
         <div className="relative z-0 flex justify-center items-center h-64 md:h-96 bg-[#541212]">
 

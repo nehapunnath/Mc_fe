@@ -6,7 +6,7 @@ const Facilities = () => {
     <div className="w-full bg-white">
       {/* Banner Section */}
       <div className="relative bg-[#541212] py-20 md:py-28">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://mccsblr.edu.in/wp-content/uploads/2023/06/pattern.png')]"></div>
+        <div className="absolute inset-0 opacity-10 "></div>
         <div className="container mx-auto px-4 text-center text-white relative z-10">
           <div className="flex justify-center mb-4">
             <div className="bg-white/20 p-4 rounded-full backdrop-blur-sm">
@@ -34,7 +34,7 @@ const Facilities = () => {
             </p>
           </div>
 
-          {/* Gallery Slider - Same as About page */}
+          {/* Gallery Slider  */}
           <div className="px-4 md:px-16 py-12">
             <div className="relative">
               <div 

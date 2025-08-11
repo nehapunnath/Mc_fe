@@ -18,18 +18,7 @@ const ParentDashboard = () => {
         classTeacher: 'Ms. Priya Patel'
       }
     },
-    // { 
-    //   id: 2, 
-    //   name: 'Priya Sharma', 
-    //   grade: '5th Grade',
-    //   avatar: 'PS',
-    //   details: {
-    //     birthDate: '22/07/2015',
-    //     bloodGroup: 'O+',
-    //     // allergies: 'Dust',
-    //     classTeacher: 'Mr. Amit Joshi'
-    //   }
-    // }
+
   ];
 
   const reports = {
@@ -118,7 +107,6 @@ const ParentDashboard = () => {
                       <DetailItem label="Blood Group" value={activeChild.details.bloodGroup} />
                     </div>
                     <div className="space-y-2">
-                      {/* <DetailItem label="Allergies" value={activeChild.details.allergies} /> */}
                       <DetailItem label="Class Teacher" value={activeChild.details.classTeacher} />
                     </div>
                   </div>
